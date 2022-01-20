@@ -37,4 +37,9 @@ const capitalizeHeadline = (str) => {
 
   return [firstWord, restOfWords].join(" ");
 };
-console.log(capitalizeHeadline("the most foo in bar"));
+
+const removeExtraSpaces = (str) => {
+  const trimmedStr = str.trim();
+  return trimmedStr.split(/\s+/).join(" ");
+};
+console.log(removeExtraSpaces("   Hello World    "));
