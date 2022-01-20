@@ -43,7 +43,7 @@ const removeExtraSpaces = (str) => {
   return trimmedStr.split(/\s+/).join(" ");
 };
 
-const kebobCase = (str) => {
+const kebobCase = (str, delimiter = "-") => {
   const goodCodes = [
     32, 45, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 97, 98, 99, 100, 101, 102,
     103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117,
@@ -51,15 +51,16 @@ const kebobCase = (str) => {
   ];
   const lowerString = str.toLowerCase();
   const splitStr = lowerString.split("");
-  console.log(splitStr);
   const cleanStr = [];
   for (let i = 0; i < splitStr.length; i += 1) {
     if (goodCodes.indexOf(splitStr.join("").charCodeAt(i)) !== -1) {
       cleanStr.push(splitStr[i]);
     }
   }
-  console.log(cleanStr.join(""));
-  return removeExtraSpaces(cleanStr.join("")).split(" ").join("-");
+  return removeExtraSpaces(cleanStr.join("")).split(" ").join(delimiter);
 };
 
-console.log(kebobCase(" Hello worlD  "));
+const snakeCase = (str) => {
+  return kebobCase(str, "_");
+};
+console.log(kebobCase("  ?^%what the heck "));
