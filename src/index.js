@@ -63,4 +63,14 @@ const kebobCase = (str, delimiter = "-") => {
 const snakeCase = (str) => {
   return kebobCase(str, "_");
 };
-console.log(kebobCase("  ?^%what the heck "));
+
+const camelCase = (str) => {
+  const strArray = str.trim().split(" ");
+  const firstWord = strArray[0].toLowerCase();
+  const restOfWords = strArray.slice(1).map(capitalize).join("");
+  return [firstWord, restOfWords].join("");
+};
+
+const shift = (str, numChars) => {
+  return str.slice(numChars) + str.slice(0, numChars);
+};
