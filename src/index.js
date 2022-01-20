@@ -74,3 +74,22 @@ const camelCase = (str) => {
 const shift = (str, numChars) => {
   return str.slice(numChars) + str.slice(0, numChars);
 };
+
+const makeHashTag = (str) => {
+  const sortedWords = str.split(" ").sort(function (a, b) {
+    return b.length - a.length || a.localeCompare(b);
+  });
+  if (sortedWords.length < 3) {
+    return sortedWords.map((word) => {
+      return "#" + capitalize(word.toLowerCase());
+    });
+  }
+  return sortedWords.slice(0, 3).map((word) => {
+    return "#" + capitalize(word.toLowerCase());
+  });
+};
+
+const isEmpty = (str) => {
+  const trimmedStr = str.trim();
+  return trimmedStr.split(/\s+/).join("").length === 0;
+};
