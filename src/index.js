@@ -93,3 +93,5 @@ const isEmpty = (str) => {
   const trimmedStr = str.trim();
   return trimmedStr.split(/\s+/).join("").length === 0;
 };
+
+console.log(makeHashTag("totally amazing game of basketball"));
