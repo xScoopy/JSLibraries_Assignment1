@@ -1,6 +1,6 @@
 ![npm](https://img.shields.io/npm/v/scoopy-str-helper)
 
-# StringHelper
+# scoopy-str-helper
 
 This library is to assist people in doing some common and not so common string manipulation. Many of the operations are simple, yet can be tedious at times. I aim to help people cut down the time it takes to perform these tedious operations and place some neat string manipulation techniques within a few easy to use methods.
 
