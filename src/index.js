@@ -1,5 +1,8 @@
 /* eslint-disable no-unused-vars */
 const capitalize = (str) => {
+  if (str.length === 0) {
+    return '';
+  }
   const firstChar = str[0].toUpperCase();
   const newArray = [firstChar, str.slice(1)];
   return newArray.join('');
@@ -8,6 +11,9 @@ const capitalize = (str) => {
 const allCaps = (str) => str.toUpperCase();
 
 const capitalizeWords = (str) => {
+  if (str.length === 0) {
+    return '';
+  }
   const strArray = str.split(' ');
   return strArray.map(capitalize).join(' ');
 };
@@ -84,3 +90,15 @@ const isEmpty = (str) => {
   const trimmedStr = str.trim();
   return trimmedStr.split(/\s+/).join('').length === 0;
 };
+
+module.exports.capitalize = capitalize;
+module.exports.allCaps = allCaps;
+module.exports.capitalizeWords = capitalizeWords;
+module.exports.capitalizeHeadline = capitalizeHeadline;
+module.exports.removeExtraSpaces = removeExtraSpaces;
+module.exports.kebobCase = kebobCase;
+module.exports.snakeCase = snakeCase;
+module.exports.camelCase = camelCase;
+module.exports.shift = shift;
+module.exports.makeHashTag = makeHashTag;
+module.exports.isEmpty = isEmpty;
