@@ -22,6 +22,8 @@ test('allCaps', () => {
 test('capitalizeWords', () => {
   const result = strHelper.capitalizeWords('hello to the world');
   expect(result).toBe('Hello To The World');
+  const result2 = strHelper.capitalizeWords('');
+  expect(result2).toBe('');
 });
 
 test('capitalizeHeadline', () => {
@@ -57,6 +59,8 @@ test('shift', () => {
 test('makeHashTag', () => {
   const result = strHelper.makeHashTag('insane unit testing in development');
   expect(result).toStrictEqual(['#Development', '#Testing', '#Insane']);
+  const result2 = strHelper.makeHashTag('brohammer');
+  expect(result2).toStrictEqual(['#Brohammer']);
 });
 
 test('isEmpty', () => {
