@@ -2,6 +2,9 @@
 
 This library is to assist people in doing some common and not so common string manipulation. Many of the operations are simple, yet can be tedious at times. I aim to help people cut down the time it takes to perform these tedious operations and place some neat string manipulation techniques within a few easy to use methods.
 
+## Initialize
+> const strHelper = require('scoopy-str-helper')
+
 ### Methods
 
 **capitalize(str)** - takes in a string and capitalizes the first letter of the string. Returns a new version of the string.
