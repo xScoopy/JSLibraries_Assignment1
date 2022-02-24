@@ -1,4 +1,5 @@
 ![npm](https://img.shields.io/npm/v/scoopy-str-helper)
+![example workflow](https://github.com/xScoopy/JSLibraries_Assignment1/actions/workflows/node.js.yml/badge.svg)
 
 # scoopy-str-helper
 
