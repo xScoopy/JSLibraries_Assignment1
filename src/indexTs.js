@@ -1,4 +1,8 @@
+/* eslint-disable no-param-reassign */
+/* eslint-disable no-void */
+/* eslint-disable func-names */
 /* eslint-disable no-unused-vars */
+// eslint-disable-next-line func-names
 const capitalize = function (str) {
   if (str.length === 0) {
     return '';
