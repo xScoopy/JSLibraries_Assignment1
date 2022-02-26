@@ -1,6 +1,6 @@
 ![npm](https://img.shields.io/npm/v/scoopy-str-helper)
 ![example workflow](https://github.com/xScoopy/JSLibraries_Assignment1/actions/workflows/node.js.yml/badge.svg)
-![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/xScoopy/478767b3ed69f94463838f0eb722ac68 /raw/JSLibraries_Assignment1__heads_main.json)
+[![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/xScoopy/478767b3ed69f94463838f0eb722ac68 /raw/JSLibraries_Assignment1__heads_main.json)]
 
 # scoopy-str-helper
 
